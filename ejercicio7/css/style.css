@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+/*font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/*REGLAS DEL RESPONSIVE*/
+
+/*1: meta viewport*/
+
+/*2: todas las imagenes:
+width: 100%;
+height: auto;
+display:block; */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0px 120px 0px;
+}
+
+header :is(h2, p) {
+    color: #aaa;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+/*
+3: las imagenes no pueden tener anchos fijos, pero si pueden tener anchos máximos.
+Un  ancho fijo es una medida estilo 700px, pero si podemos tener medidas porcentuales estilo 90%
+LO mejor es combinar max-width con width
+*/
+.container {
+    max-width: 1140px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*main section.container = dentro de main hay section con la clase container*/
+/*main section. container = dentro de main hay etiquetas con la clase container*/
+
+main section.container {
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main section article .velo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+main section article h4 {
+    margin-left: -800px;
+    transition: 1s;
+}
+
+main section article h3 {
+    margin-left: 800px;
+    transition: 1s;
+}
+
+main section article:hover .velo {
+    opacity: 1;
+}
+
+main section article:hover :is(h4, h3) {
+    margin-left: 0;
+}
+
+main section article img {
+    transition: 1s;
+}
+
+main section article:hover img {
+    transform: scale(1.25) rotateZ(10deg);
+}
+
+@media(min-width: 600px) {
+    main section article {
+        width: 50%;
+        position: relative;
+    }
+
+
+}
