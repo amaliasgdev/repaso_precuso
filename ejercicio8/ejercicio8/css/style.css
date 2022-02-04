@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(248, 247, 242);
+}
+
+/*cuerpo estrecho*/
+.container {
+    max-width: 1140px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+
+/*menu de navegacion*/
+header .container:first-child {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container:first-child li {
+    padding: 25px;
+}
+
+header .container:first-child li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*hero*/
+div .hero {
+    height: 250px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/fondo.jpeg");
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+h1, h2, a {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 75px 0 15px 0;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+div .hero div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*botones*/
+.hero div a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    padding: 8px 15px 8px 15px;
+}
+
+.hero div a:first-child {
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+.hero div a:last-child {
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+}
+
+/*******************************/
+
+/*FIJO QUE ESTA MAL PERO SALE BONICO*/
+
+/* main {
+    position: relative;
+}
+
+main section.container {
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-top: 3px solid yellow;
+} */
+
+main .container {
+    position: relative;
+}
+
+main .container .linea {
+    position: absolute;
+    top: -30px;
+    background-color: white;
+    border-top: 3px solid yellow;
+}
+
+/*******************************/
+
+span {
+    color: rgb(30, 157, 199);
+    font-weight: 700;
+}
+
+main .container .linea article img {
+    width: 100%;
+
+}
+
+main .container .linea article {
+    margin: 20px;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+@media (min-width:600px) {
+
+    main section.container .linea {
+        display: flex;
+    }
+
+    header .container:first-child {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .container:first-child nav ul {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        font-size: 10px;
+
+    }
+
+    header .container:first-child li {
+        padding: 5px;
+    }
+
+
+
+}
