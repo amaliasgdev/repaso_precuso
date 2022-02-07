@@ -44,7 +44,7 @@ header .container:first-child li a {
 /*hero*/
 div .hero {
     height: 250px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/fondo.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/fondo.jpeg");
     background-size: cover;
     position: relative;
     color: white;
